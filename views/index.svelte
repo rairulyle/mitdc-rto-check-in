@@ -1,5 +1,3 @@
-<script>
-    
-	let data = 'lyle';
-</script>
-<div>what is up, {data}</div>
+<svelte:head>
+	<title>MITDC: RTO Check-In</title>
+</svelte:head>
