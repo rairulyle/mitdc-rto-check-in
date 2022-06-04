@@ -1,0 +1,21 @@
+<main class='box-border max-w-3xl mx-auto'>
+    <nav class='navbar bg-base-100 shadow justify-center'>
+        <a class='btn btn-ghost normal-case text-xl font-bold' href='/'>MITDC: RTO Check-In</a>
+    </nav>
+    <section class='p-6'>
+        <h1 class='text-6xl font-bold my-8 text-center'>{{timeNow}}</h1>
+        <div class='form-control gap-4'>
+            <label class='input-group'>
+                <span>Email</span>
+                <input type='text' placeholder='manulife@mfcgd.com' class='input input-bordered w-full' />
+            </label>
+            <select class='select select-bordered w-full'>
+                <option disabled selected>Office</option>
+                <option>6th Floor, NEX Tower</option>
+                <option>7th Floor, NEX Tower</option>
+                <option>10th Floor, Solaris One</option>
+            </select>
+            <button class='btn btn-primary'>Submit</button>
+        </div>
+    </section>
+</main>

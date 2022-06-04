@@ -1,12 +1,10 @@
 const express = require('express');
-
-const apiRouter = require('./api');
-const viewRouter = require('./views');
-
+const moment = require('moment');
 const router = express.Router();
 
-router.use('/api', apiRouter);
-router.use('/',viewRouter)
-
+/* GET home page. */
+router.get('/', function (req, res, next) {
+    res.render('index', { timeNow: moment().format('hh:mm A') });
+});
 
 module.exports = router;
